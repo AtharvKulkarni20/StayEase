@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listings</title>
+  </head>
+  <body>
+    <h1>Listings</h1>
+    <br />
+    <form action="/listings/new" method="get"><button>Add Listing</button></form>
+    <div class="Card">
+      <% for(let list of listingData){ %>
+      <a href="/listings/<%= list._id %>">
+        <ul>
+          <li>
+            <h4 style="color: black"><%= list.title %></h4>
+          </li>
+        </ul>
+      </a>
+      <% } %>
+    </div>
+  </body>
+</html>
