@@ -7,18 +7,22 @@
   </head>
   <body>
     <h1>Listings</h1>
-    <br />
-    <form action="/listings/new" method="get"><button>Add Listing</button></form>
+    <form action="/listings/new" method="get">
+      <button>Add Listing</button>
+    </form>
+
     <div class="Card">
-      <% for(let list of listingData){ %>
-      <a href="/listings/<%= list._id %>">
-        <ul>
-          <li>
-            <h4 style="color: black"><%= list.title %></h4>
-          </li>
-        </ul>
-      </a>
-      <% } %>
+      <ul>
+        <% for(let list of listingData){ %>
+          <% if (list && list.title) { %>
+            <li>
+              <a href="/listings/<%= list._id %>">
+                <h4 style="color: black"><%= list.title %></h4>
+              </a>
+            </li>
+          <% } %>
+        <% } %>
+      </ul>
     </div>
   </body>
 </html>
