@@ -1,0 +1,23 @@
+body {
+     background-color: #f0f0f0;
+
+  }
+
+.navbar{
+     height: 5rem;
+     border-bottom: 1px solid black;
+     border-bottom-right-radius: 25px;
+     border-bottom-left-radius: 25px;
+     margin-bottom: 15px;
+     padding: 15px !important;
+
+}
+
+.nav-link{
+     color: #000000 !important;
+}
+
+.card{
+     border: none !important;
+     margin-bottom: 2rem;
+}
