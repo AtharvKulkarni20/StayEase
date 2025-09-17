@@ -1,21 +1,34 @@
 <% layout('/layouts/boilerPlate') -%>
-  <body>
-    <h1>New Listing</h1>
-    <hr />
-    <form action="/listings" method="post">
+<body style="font-family: Arial, sans-serif; background: #f9f9f9; margin: 0; padding: 0;">
+  <div style="max-width: 500px; margin: 40px auto; background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    
+    <h1 style="text-align: center; margin-bottom: 20px; color: #333;">New Listing</h1>
+    <hr style="border: 0; border-top: 1px solid #ddd; margin-bottom: 20px;" />
 
-        <input type="text" name="listing[title]" placeholder="Add a Name " />
-        <br /><br />
-        <input type="text" name="listing[description]" placeholder="Add a description " />
-        <br /><br />
-        <input type="text" name="listing[image]" placeholder="Add a image URL/LINK " />
-        <br /><br />
-        <input type="number" name="listing[price]" placeholder="Add a Price " />
-        <br /><br />
-        <input type="text" name="listing[location]" placeholder="Add a Location " />
-        <br /><br />
-        <input type="text" name="listing[country]" placeholder="Add a Country " />
-        <br /><br />
-        <button>Add..</button>
+    <form action="/listings" method="post" style="display: flex; flex-direction: column; gap: 15px;">
+
+      <input type="text" name="listing[title]" placeholder="Add a Name" 
+        style="padding: 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 14px;" />
+
+      <input type="text" name="listing[description]" placeholder="Add a Description" 
+        style="padding: 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 14px;" />
+
+      <input type="text" name="listing[image]" placeholder="Add an Image URL" 
+        style="padding: 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 14px;" />
+
+      <input type="number" name="listing[price]" placeholder="Add a Price" 
+        style="padding: 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 14px;" />
+
+      <input type="text" name="listing[location]" placeholder="Add a Location" 
+        style="padding: 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 14px;" />
+
+      <input type="text" name="listing[country]" placeholder="Add a Country" 
+        style="padding: 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 14px;" />
+
+      <button 
+        style="padding: 12px; background: #4CAF50; color: #fff; border: none; border-radius: 6px; font-size: 16px; cursor: pointer; transition: background 0.3s;">
+        Add Listing
+      </button>
     </form>
-  </body>
+  </div>
+</body>
