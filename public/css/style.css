@@ -48,3 +48,9 @@ body {
      opacity: 0.3;
      background-color: #f0f0f0;
 }
+
+.btns{
+     display: flex;
+     align-items: center;
+}
+
